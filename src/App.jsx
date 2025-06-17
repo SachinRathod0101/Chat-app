@@ -9,7 +9,7 @@ import Chat from './pages/Chat';
 import ChatWindow from "./Components/ChatWindow";
 import AddPost from './pages/AddPost';
 import Data from './pages/Data';
-import Layout from './components/Layout';
+import Layout from './Components/Layout';
 import Search from "./pages/Search";
 import UserProfile from './pages/UserProfile';
 import ConvertBase64 from './Components/ConvertBase64';
