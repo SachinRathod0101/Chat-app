@@ -1,0 +1,91 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #111827, #581c87, #000000); /* gray-900 via purple-900 to black */
+}
+
+textarea,
+button {
+  border-radius: 8px;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(135deg, #ff7f50, #ff6347); /* Coral to tomato for specific elements */
+}
+
+.bg-pink-500 {
+  background-color: #ec4899;
+}
+
+.text-white {
+  color: white;
+}
+
+/* Sidebar */
+.fixed {
+  position: fixed;
+}
+
+.top-0 {
+  top: 0;
+}
+
+.left-0 {
+  left: 0;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-111 {
+  width: 111px; /* Optional narrow sidebar variant */
+}
+
+.w-80 {
+  width: 320px; /* Default sidebar width from ProfileWithEbook */
+}
+
+/* BottomNavbar */
+.bottom-0 {
+  bottom: 0;
+}
+
+.z-50 {
+  z-index: 50;
+}
+
+@layer utilities {
+  .animate-slide-in-right {
+    animation: slideInRight 0.3s ease-out;
+  }
+  .animate-slide-in-left {
+    animation: slideInLeft 0.3s ease-out;
+  }
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
