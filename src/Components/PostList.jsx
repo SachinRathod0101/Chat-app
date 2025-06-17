@@ -5,7 +5,7 @@ import socket from "../socket";
 import { FaHeart, FaComment, FaPaperPlane, FaEllipsisH, FaTrash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = import.meta.env.VITE_API_URL || "http://localhost:5000";
+const API_URL = "https://workflo-backend-1wls.onrender.com";
 
 const Post = ({ post, currentUser }) => {
   const [isFollowing, setIsFollowing] = useState(false);

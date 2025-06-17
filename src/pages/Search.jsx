@@ -5,7 +5,7 @@ import debounce from "lodash/debounce";
 import io from "socket.io-client";
 import { FaVideo } from "react-icons/fa";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = "https://workflo-backend-1wls.onrender.com";
 const SOCKET_URL = API_URL;
 
 const Search = () => {

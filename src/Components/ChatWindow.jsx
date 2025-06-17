@@ -9,7 +9,7 @@ import socket from "../socket";
 import EmojiPicker from "emoji-picker-react";
 import { FaVideo, FaPhone } from "react-icons/fa"; // Added icons for video and voice calls
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = "https://workflo-backend-1wls.onrender.com";
 
 const ChatWindow = () => {
   const [newMessage, setNewMessage] = useState("");

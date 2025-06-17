@@ -5,7 +5,7 @@ import socket from "../socket";
 import { NotificationContext } from "../context/NotificationContext";
 import { AuthContext } from "../context/AuthContext";
 
-const API_URL = "http://localhost:5000"; // Consistent with UserProfile.jsx
+const API_URL = "https://workflo-backend-1wls.onrender.com"; // Consistent with UserProfile.jsx
 
 function Login() {
   const [username, setUsername] = useState("");

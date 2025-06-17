@@ -3,7 +3,7 @@ import axios from "axios";
 import socket from "../socket";
 import { FaHeart, FaComment, FaPaperPlane, FaEllipsisH, FaUserPlus, FaUserMinus, FaBan, FaUserCheck } from "react-icons/fa";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
+const API_URL = "https://workflo-backend-1wls.onrender.com";
 
 const AddPost = () => {
   const [user, setUser] = useState(() => {
