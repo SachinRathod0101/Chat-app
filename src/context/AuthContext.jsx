@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "https://workflo-backend-1wls.onrender.com";
+const API_URL = "https://workflo-backend-1.onrender.com";
 
 export const AuthContext = createContext();
 

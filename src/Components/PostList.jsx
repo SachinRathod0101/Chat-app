@@ -5,7 +5,7 @@ import socket from "../socket";
 import { FaHeart, FaComment, FaPaperPlane, FaEllipsisH, FaTrash } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const API_URL = "https://workflo-backend-1wls.onrender.com";
+const API_URL = "https://workflo-backend-1.onrender.com";
 
 const Post = ({ post, currentUser }) => {
   const [isFollowing, setIsFollowing] = useState(false);

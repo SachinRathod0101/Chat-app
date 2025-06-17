@@ -3,7 +3,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import socket from "../socket";
 
-const API_URL = "https://workflo-backend-1wls.onrender.com";
+const API_URL = "https://workflo-backend-1.onrender.com";
 
 const UserList = () => {
   const [users, setUsers] = useState([]);

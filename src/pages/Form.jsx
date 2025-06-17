@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-const API_URL = "https://workflo-backend-1wls.onrender.com";
+const API_URL = "https://workflo-backend-1.onrender.com";
 
 function Form() {
   const [formData, setFormData] = useState({
