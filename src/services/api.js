@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://workflo-backend-1wls.onrender.com",
+  baseURL: "https://workflo-backend-1.onrender.com",
 });
 
 export default API;
