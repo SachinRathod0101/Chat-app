@@ -18,7 +18,9 @@ export const AuthProvider = ({ children }) => {
         .then((res) => setUser(res.data))
         .catch(() => localStorage.removeItem("token"));
     }
+    
   }, []);
+  
 
   return (
     <AuthContext.Provider value={{ user, setUser }}>

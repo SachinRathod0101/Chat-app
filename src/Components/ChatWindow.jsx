@@ -107,6 +107,7 @@ const ChatWindow = () => {
       setShowEmojiPicker(false);
     } catch (err) {
       setError("Failed to send message.");
+      console.error("Firebase message fetch error:", err); 
     }
   };
 
@@ -316,7 +317,7 @@ const ChatWindow = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-130 bg-gradient-to-br from-gray-900 via-purple-900 to-black w-screen pb-[calc(4rem+env(safe-area-inset-bottom))]">
+    <div className="flex flex-col min-h-142 bg-gradient-to-br from-gray-900 via-purple-900 to-black w-screen pb-[calc(4rem+env(safe-area-inset-bottom))]">
       <style>
         {`
           .glass-card {

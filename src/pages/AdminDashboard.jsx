@@ -16,7 +16,7 @@ function AdminDashboard() {
   const fetchRequests = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/api/form/requests');
+      const res = await axios.get('https://workflo-backend-1.onrender.com/api/form/requests');
       // Divide into pending and rejected lists
       const pending = res.data.filter((user) => user.status !== 'rejected');
       const rejectedUsers = res.data.filter((user) => user.status === 'rejected');
@@ -35,7 +35,7 @@ function AdminDashboard() {
   // Approve user
   const handleAccept = async (id) => {
     try {
-      await axios.post('http://localhost:5000/api/form/approve', { id });
+      await axios.post('https://workflo-backend-1.onrender.com/api/form/approve', { id });
       alert('✅ User Approved');
       fetchRequests();
     } catch (err) {
@@ -48,7 +48,7 @@ function AdminDashboard() {
   const handleReject = async (id) => {
     if (!window.confirm('Reject this user?')) return;
     try {
-      await axios.post('http://localhost:5000/api/form/reject', { id });
+      await axios.post('https://workflo-backend-1.onrender.com/api/form/reject', { id });
       alert('❌ User Rejected');
       fetchRequests();
     } catch (err) {
@@ -107,7 +107,7 @@ function UserCard({ user, onAccept, onReject, showActions = true }) {
         <p>📍 {user.location}</p>
         {user.file && (
           <a
-            href={`http://localhost:5000/${user.file}`}
+            href={`https://workflo-backend-1.onrender.com/${user.file}`}
             target="_blank"
             rel="noopener noreferrer"
             className="text-blue-500 underline block mt-2"
